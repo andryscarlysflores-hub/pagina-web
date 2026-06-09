@@ -6,13 +6,27 @@
     <title>Site 1C</title>
     <style>
        header{
-             background-color: deeppink;(1,48,37,37)
+             background-color: deeppink(1,48,37,37)
+             text-align center;
+             max-width: 800px;
+             margin : 0 ,auto;
         }
         main{
-
+            background-color: hotpink(158,44,158);
+            color: blue(0,0,0);
+            max-width: 800;
+            margin:0 ,auto;
         }
         img{
-            
+            width: 80px;
+            height: 80px;
+
+        }
+        div p {
+            font-weight: bold;
+        }
+        .artigo-autor{
+            font-weight: bold;
         }
     </style>
 </head>
@@ -25,7 +39,23 @@
         <p>Por: Seu Nome</p>
         <p>Boas-vindas ao meu novo site! Aqui vou compartilhar dicas e curiosidades</p>
     </main>
-    
+    <div>
+        <h2>Meu primeiro post</h2>
+        </p>class="artigo"Por:seu Nome</p>
+       
+       <p>Boas-vindas ao meu novo site! Aqui vou comparti</p>
+       <button>💗​<span>0</span></button>
+    </div>
     
 </body>
+<script>
+    const botao = document. querySelector("button");
+    botao.addEventListener("click,botaoClicado");
+    function botaoClicado {
+        console.log("fui clicado");
+        let text=botao.querySelector("span");
+        text.textContent++;
+
+    }
+</script>
 </html>
